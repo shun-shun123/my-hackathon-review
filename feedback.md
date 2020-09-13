@@ -144,3 +144,92 @@ UMLを事前に書いておいたおかげで、フロントの実装は数段�
 * MongoDB
 * Swift(iOS)
 * Docker<-New!
+
+# 2020/05 Unity1Week
+## 自分の技術スタック
+* Kotlin(android)
+* C
+* C++(openFrameworks)
+* Java(android)
+* Python/Flask
+* Unity/C#/Zenject/ARFoundation
+* Go/Echo/Gorm
+* MySQL
+* MongoDB
+* Swift(iOS)
+
+## 作ったもの
+* メンヘラ彼女のイチゴちゃんから逃げる3Dアクションゲーム
+
+## 使用技術
+* フロント
+    * CleanArchitectureっぽいやつ
+    * 1シーンでプレハブベースの開発
+
+## よかった点
+デザイナーやイラストレーター、サウンドクリエイターまで勢揃いのチーム開発ができたこと。デザインの作る過程や音楽についてなどリアルなゲーム開発を学べた。また、プレハブベースでの開発と、Clean Architectureっぽい開発も経験できたこと。
+
+## 改善点
+プレハブベースの開発や、１シーンで全てを行うゲーム開発だと、一度非アクティブにしたGameObjectの管理などが曖昧で、Animationが動かないなどのバグが起きたこと。また開発初期段階から考えうるデータ構造をリストアップしておいて、それぞれをどのように管理するか（スクリプト内？ScriptableObject？スプシ？）を適切に考えれていなかったため、かなり逆戻りコストが増えた。
+
+## 改善案
+* プレハブベースの開発をするなら、一度GameObjectがどのように管理されるのかしっかり理解する必要があった。
+* データ管理の方法は適切なものをなるべく早い段階から選んでおかないと、逆戻りのコストが大きすぎた
+
+# 20200/08 Unity1Week
+## 自分の技術スタック
+* Kotlin(android)
+* C
+* C++(openFrameworks)
+* Java(android)
+* Python/Flask
+* Unity/C#/Zenject/ARFoundation
+* UniRx/UniTask/DOTween
+* Go/Echo/Gorm
+* MySQL
+* MongoDB
+* Swift(iOS)
+
+## 作ったもの
+* メンヘラ彼女のイチゴちゃんのお薬作りを手伝う音ゲー
+
+## 使用技術
+* MIDI
+* UniRx/UniTask/DOTween
+* マルチシーンエディティング
+
+## よかった点
+マルチシーンエディティングが想像以上にうまく動いた。シーン遷移基盤とかを既に作っていたこともあったからその点でうまく動いたのだと思う。UniRxを用いたMVP開発も結構分かりやすかったと思う。あとはインタフェース定義。事前に話し合ってインタフェースを定義しておいたから開発もスムーズに行けたと思う。
+
+## 改善案
+楽譜を作る部分などが完全に直打ちだったこともあり、難易度調整などの柔軟性が低かった。なるべく元の音源だけに依存しない音ゲー基盤があれば嬉しいなと思う
+
+# 2020/09 HackU
+## 自分の技術スタック
+* Kotlin(android)
+* C
+* C++(openFrameworks)
+* Java(android)
+* Python/Flask
+* Unity/C#/Zenject/ARFoundation
+* UniRx/UniTask/DOTween
+* Go/Echo/Gorm
+* MySQL
+* MongoDB
+* Swift(iOS)
+
+## 作ったもの
+神さまと仔羊がマッチングして悩みを相談できるアプリ
+
+## 使用技術
+* Flutter(New!)
+* Firebase(New!)
+* Github Actions(New!)
+* Github Actions x Deploygate = CI/CD(New!)
+* iOSの証明書周りの理解(New!)
+
+## よかった点
+FlutterでのMVP開発が結構UnityのUniRxを用いたそれと似ていたこともありスムーズに開発できた。C#ならあれだよねという知識基盤があるのでDart自体の習得も簡単な部分くらいしかきっとさわれてないけど、まずまずと言った感じだった。
+
+## 改善案
+再描画のコストなどの部分は理解できていないところ、もしくはわかっているけど高コストになってしまう部分が多々あったので、そのあたりはハッカソンだから仕方ないと思っていたが、リリースまで行くなら考えれるようになりたい
